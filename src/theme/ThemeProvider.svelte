@@ -4,11 +4,13 @@
     :global(*),
     :global(*:before),
     :global(*:after) {
+        box-sizing: border-box !important;
         margin: 0;
     }
 
     :global(body) {
         /* colors */
+        --accent_white: #FFFFFF;
         --accent_0: #F8F9FA;
         --accent_1: #E9ECEF;
         --accent_2: #DEE2E6;

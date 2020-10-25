@@ -9,15 +9,16 @@ import ThemeProvider from './theme/ThemeProvider.svelte';
 
 <style>
     :global(body) {
-        --content-min-width: calc(100vh - 80px - 100px);
+        --content-min-width: 600px;
+        --content-max-width: 900px;
         display: grid;
         grid-template-areas: 
             "header header header"
             "left   content right"
             "footer footer footer"
         ;
-        grid-template-rows: minmax(auto, 80px) minmax(var(--content-min-width), auto) minmax(100px, auto);
-        grid-template-columns: 1fr minmax(900px) 1fr;
+        grid-template-rows: auto minmax(calc(100vh - 80px - 100px), auto) minmax(100px, auto);
+        grid-template-columns: 1fr minmax(var(--content-min-width), var(--content-max-width)) 1fr;
     }
 </style>
 
