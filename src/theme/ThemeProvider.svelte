@@ -1,4 +1,5 @@
 <style lang="less">
+    /* not "less" really, just to trick svelte to understand postcss-nested */
     :global(body) {
         --accent_0: #F8F9FA;
         --accent_1: #E9ECEF;
