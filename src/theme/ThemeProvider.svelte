@@ -32,8 +32,8 @@
         font-weight: normal;
 
         line-height: 1.25;
-        color: var(--accent_6);
-        background-color: var(--accent_2);
+        color: var(--accent_7);
+        background-color: var(--accent_0);
 
         /* rest */
         --gap: 1rem;
