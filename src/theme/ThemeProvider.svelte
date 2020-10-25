@@ -10,6 +10,11 @@
         --accent_6: #495057;
         --accent_7: #343A40;
         --accent_8: #212529;
+        --violet: #540D6E;
+        --red: #EE4266;
+        --yellow: #FFD23F;
+        --light-green: #3BCEAC;
+        --deep-green: #0EAD69;
 
         font-family: 'Montserrat', sans-serif;
         color: red;
