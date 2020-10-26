@@ -87,7 +87,7 @@
     font-size: 1rem;
     font-weight: normal;
   }
-  
+
   :global(a) {
     --link-main-color: var(--deep-green);
     --link-main-hover-color: var(--deep-green);

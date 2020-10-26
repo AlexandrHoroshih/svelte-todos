@@ -4,12 +4,12 @@
   import Footer from './features/footer/Footer.svelte';
   import Sidenav from './features/sidenav/Sidenav.svelte';
   import ThemeProvider from './theme/ThemeProvider.svelte';
-import Button from './ui/button/Button.svelte';
+  import Button from './ui/button/Button.svelte';
 
-const testClick = e => {
-    console.log('clicked')
-    console.log(e)
-};
+  const testClick = (e) => {
+    console.log('clicked');
+    console.log(e);
+  };
 </script>
 
 <style>
@@ -25,10 +25,9 @@ const testClick = e => {
         100px,
         auto
       );
-    grid-template-columns: 1fr minmax(
-        var(--content-min-width),
-        var(--content-max-width)
-      ) 1fr;
+    grid-template-columns:
+      1fr minmax(var(--content-min-width), var(--content-max-width))
+      1fr;
   }
 </style>
 
