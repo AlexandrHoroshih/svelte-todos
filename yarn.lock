@@ -3766,6 +3766,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"focus-visible@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "focus-visible@npm:5.2.0"
+  checksum: 4e60302bd84accb92d11c22f8a5f6e38d2f5a0cc1bd45e708b9f00173cc700d1f0782c78f932023479074739fd588e0dd94c0e2575b2212843955e2d4398e752
+  languageName: node
+  linkType: hard
+
 "for-in@npm:^1.0.2":
   version: 1.0.2
   resolution: "for-in@npm:1.0.2"
@@ -9866,6 +9873,7 @@ fsevents@~2.1.2:
     eslint-plugin-import-helpers: ^1.0.2
     eslint-plugin-svelte3: ^2.7.3
     eslint-plugin-unicorn: ^18.0.1
+    focus-visible: ^5.2.0
     history: ^5.0.0
     husky: ^4.2.5
     lint-staged: ^10.1.3

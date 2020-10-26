@@ -33,5 +33,9 @@ import ThemeProvider from './theme/ThemeProvider.svelte';
     <h5>Hello world</h5>
     <h6>Hello world</h6>
     <p>Hello world</p>
+    <button>
+        Кнопка
+    </button>
+    <a href="/dd">Ссылка</a>
 </ContentWrapper>
 <Footer />

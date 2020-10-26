@@ -60,6 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-import-helpers", "virtual:35a3d58d59024f6b65cdcd889d697153048fd91d718cf6b2c2db23aa3ffbd590e6d811517477e4fb7f234de042dcb8dac81962c1aa05b3616add03362a2abf35#npm:1.1.0"],
             ["eslint-plugin-svelte3", "virtual:35a3d58d59024f6b65cdcd889d697153048fd91d718cf6b2c2db23aa3ffbd590e6d811517477e4fb7f234de042dcb8dac81962c1aa05b3616add03362a2abf35#npm:2.7.3"],
             ["eslint-plugin-unicorn", "virtual:35a3d58d59024f6b65cdcd889d697153048fd91d718cf6b2c2db23aa3ffbd590e6d811517477e4fb7f234de042dcb8dac81962c1aa05b3616add03362a2abf35#npm:18.0.1"],
+            ["focus-visible", "npm:5.2.0"],
             ["history", "npm:5.0.0"],
             ["husky", "npm:4.2.5"],
             ["lint-staged", "npm:10.2.13"],
@@ -4324,6 +4325,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/flatted-npm-2.0.2-ccb06e14ff-a3e5fb71ad.zip/node_modules/flatted/",
           "packageDependencies": [
             ["flatted", "npm:2.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["focus-visible", [
+        ["npm:5.2.0", {
+          "packageLocation": "./.yarn/cache/focus-visible-npm-5.2.0-0a54ff0da1-4e60302bd8.zip/node_modules/focus-visible/",
+          "packageDependencies": [
+            ["focus-visible", "npm:5.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -11086,6 +11096,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-import-helpers", "virtual:35a3d58d59024f6b65cdcd889d697153048fd91d718cf6b2c2db23aa3ffbd590e6d811517477e4fb7f234de042dcb8dac81962c1aa05b3616add03362a2abf35#npm:1.1.0"],
             ["eslint-plugin-svelte3", "virtual:35a3d58d59024f6b65cdcd889d697153048fd91d718cf6b2c2db23aa3ffbd590e6d811517477e4fb7f234de042dcb8dac81962c1aa05b3616add03362a2abf35#npm:2.7.3"],
             ["eslint-plugin-unicorn", "virtual:35a3d58d59024f6b65cdcd889d697153048fd91d718cf6b2c2db23aa3ffbd590e6d811517477e4fb7f234de042dcb8dac81962c1aa05b3616add03362a2abf35#npm:18.0.1"],
+            ["focus-visible", "npm:5.2.0"],
             ["history", "npm:5.0.0"],
             ["husky", "npm:4.2.5"],
             ["lint-staged", "npm:10.2.13"],
