@@ -5,11 +5,13 @@
   import Sidenav from './features/sidenav/Sidenav.svelte';
   import ThemeProvider from './theme/ThemeProvider.svelte';
   import Button from './ui/button/Button.svelte';
+  import Card from './ui/card/Card.svelte';
 
   const testClick = (e) => {
     console.log('clicked');
     console.log(e);
   };
+
 </script>
 
 <style>
@@ -44,5 +46,8 @@
   <p>Hello world</p>
   <Button text on:click={testClick}>Кнопка</Button>
   <a href="/dd">Ссылка</a>
+  <Card>
+    content
+  </Card>
 </ContentWrapper>
 <Footer />
