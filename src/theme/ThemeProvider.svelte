@@ -97,17 +97,6 @@
     text-decoration: none;
     transition: color 0.3s ease-in;
 
-    &:before {
-      --expand-tap-size: -0.5rem;
-      position: absolute;
-      top: var(--expand-tap-size);
-      right: var(--expand-tap-size);
-      bottom: var(--expand-tap-size);
-      left: var(--expand-tap-size);
-      display: block;
-      content: ' ';
-    }
-
     &:after {
       position: absolute;
       right: 51%;
