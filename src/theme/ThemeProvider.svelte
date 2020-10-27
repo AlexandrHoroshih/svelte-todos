@@ -99,22 +99,22 @@
 
     &:after {
       position: absolute;
-      right: 51%;
+      right: 0;
       bottom: 0;
-      left: 51%;
+      left: 0;
       display: block;
       content: ' ';
       border-bottom: 2px solid var(--link-main-hover-color);
       transition: 0.3s ease-out;
-      transition-property: left, right;
+      transition-property: transform;
+      transform: scaleX(0);
     }
 
     &:hover {
       color: var(--link-main-hover-color);
 
       &:after {
-        right: 0;
-        left: 0;
+        transform: scaleX(1);
       }
     }
   }
