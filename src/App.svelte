@@ -23,13 +23,14 @@
       'header header header'
       'left   content right'
       'footer footer footer';
-    grid-template-rows: auto minmax(calc(100vh - 80px - 100px), auto) minmax(
-        100px,
+    grid-template-rows: auto 1fr minmax(
+        10vh,
         auto
       );
     grid-template-columns:
       1fr minmax(var(--content-min-width), var(--content-max-width))
       1fr;
+    height: 100vh;
   }
 </style>
 
@@ -44,7 +45,7 @@
   <h5>Hello world</h5>
   <h6>Hello world</h6>
   <p>Hello world</p>
-  <Button text on:click={testClick}>Кнопка</Button>
+  <Button on:click={testClick}>Кнопка</Button>
   <a href="/dd">Ссылка</a>
   <Card>
     content

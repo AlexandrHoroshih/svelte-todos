@@ -1,6 +1,7 @@
 <style lang="less">
   .footer {
     grid-area: footer;
+    height: 100%;
     color: var(--accent_4);
     background-color: var(--accent_2);
   }
