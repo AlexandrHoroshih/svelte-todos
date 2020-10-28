@@ -1,6 +1,4 @@
 <script>
-  import { createEventDispatcher } from 'svelte';
-
   export let text = false;
 
   let clicked = false;
@@ -9,9 +7,6 @@
     clicked = true;
     setTimeout(() => (clicked = false), 300);
   };
-
-  const dispatch = createEventDispatcher();
-  const forwardClick = (e) => dispatch('click', e);
 </script>
 
 <style lang="less">
@@ -56,7 +51,7 @@
   class:text
   class:clicked
   on:click={animateClick}
-  on:click={forwardClick}
+  on:click
   {...$$restProps}>
   <slot />
 </button>
