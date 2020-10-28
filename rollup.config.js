@@ -60,9 +60,10 @@ export default {
     DEVELOPMENT && serve(DIST),
     DEVELOPMENT && livereload(DIST),
     commonjs(),
-    cleaner({
+    PRODUCTION &&
+      cleaner({
         targets: [DIST],
-    }),
+      }),
     PRODUCTION && terser(),
   ],
   watch: {
