@@ -52,6 +52,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["browserslist", "npm:4.14.5"],
             ["commitizen", "npm:4.2.1"],
             ["cz-conventional-changelog", "npm:3.3.0"],
+            ["effector", "npm:21.6.0"],
             ["eslint", "npm:6.8.0"],
             ["eslint-config-airbnb-base", "virtual:35a3d58d59024f6b65cdcd889d697153048fd91d718cf6b2c2db23aa3ffbd590e6d811517477e4fb7f234de042dcb8dac81962c1aa05b3616add03362a2abf35#npm:14.2.0"],
             ["eslint-config-prettier", "virtual:35a3d58d59024f6b65cdcd889d697153048fd91d718cf6b2c2db23aa3ffbd590e6d811517477e4fb7f234de042dcb8dac81962c1aa05b3616add03362a2abf35#npm:6.11.0"],
@@ -3466,6 +3467,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ecc-jsbn", "npm:0.1.2"],
             ["jsbn", "npm:0.1.1"],
             ["safer-buffer", "npm:2.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["effector", [
+        ["npm:21.6.0", {
+          "packageLocation": "./.yarn/cache/effector-npm-21.6.0-198d1d1ba8-d4bff0629f.zip/node_modules/effector/",
+          "packageDependencies": [
+            ["effector", "npm:21.6.0"]
           ],
           "linkType": "HARD",
         }]
@@ -11088,6 +11098,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["browserslist", "npm:4.14.5"],
             ["commitizen", "npm:4.2.1"],
             ["cz-conventional-changelog", "npm:3.3.0"],
+            ["effector", "npm:21.6.0"],
             ["eslint", "npm:6.8.0"],
             ["eslint-config-airbnb-base", "virtual:35a3d58d59024f6b65cdcd889d697153048fd91d718cf6b2c2db23aa3ffbd590e6d811517477e4fb7f234de042dcb8dac81962c1aa05b3616add03362a2abf35#npm:14.2.0"],
             ["eslint-config-prettier", "virtual:35a3d58d59024f6b65cdcd889d697153048fd91d718cf6b2c2db23aa3ffbd590e6d811517477e4fb7f234de042dcb8dac81962c1aa05b3616add03362a2abf35#npm:6.11.0"],
