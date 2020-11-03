@@ -1,15 +1,21 @@
 <script>
-  import Header from './features/header/Header.svelte';
-  import ContentWrapper from './features/content/Content.svelte';
-  import Footer from './features/footer/Footer.svelte';
-  import Sidenav from './features/sidenav/Sidenav.svelte';
-  import ThemeProvider from './theme/ThemeProvider.svelte';
-  import Button from './ui/button/Button.svelte';
-  import Card from './ui/card/Card.svelte';
+  import {createBrowserHistory} from 'history';
+  import Header from '@src/features/header/Header.svelte';
+  import ContentWrapper from '@src/features/content/Content.svelte';
+  import Footer from '@src/features/footer/Footer.svelte';
+  import Sidenav from '@src/features/sidenav/Sidenav.svelte';
+  import ThemeProvider from '@src/features/theme-provider/ThemeProvider.svelte';
+  import Button from '@src/ui/button/Button.svelte';
+  import Card from '@src/ui/card/Card.svelte';
+  import {createRouter} from '@lib/effector-history-router';
+
+  const router = createRouter({history: createBrowserHistory()});
+
+  router.state.watch(console.log);
 
   const testClick = (e) => {
-    console.log('clicked');
-    console.log(e);
+    router.pushFx('page')
+    router.goBackFx()
   };
 
 </script>

@@ -1,5 +1,5 @@
 <script>
-    import {getStyleString} from '../../../lib/get-style-string';
+    import {getStyleString} from '@lib/get-style-string';
     
     export let cardBg = 'var(--accent_white)';
     export let cardContentColor = 'var(--accent_8)';
