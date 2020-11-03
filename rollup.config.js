@@ -1,4 +1,6 @@
 import svelte from 'rollup-plugin-svelte';
+import alias from '@rollup/plugin-alias';
+import path from 'path';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import replace from '@rollup/plugin-replace';
@@ -13,6 +15,12 @@ import progress from 'rollup-plugin-progress';
 import sveltePreprocessPostcss from 'svelte-preprocess-postcss';
 import md5 from 'md5';
 
+const paths = {
+    theme: path.resolve(__dirname, 'theme'),
+    lib: path.resolve(__dirname, 'lib'),
+    src: path.resolve(__dirname, 'src')
+};
+
 const PRODUCTION = !process.env.ROLLUP_WATCH;
 const DEVELOPMENT = !PRODUCTION;
 
@@ -26,6 +34,13 @@ export default {
     entryFileNames: '[name].[hash].js',
   },
   plugins: [
+    alias({
+        entries: [
+          { find: '@lib', replacement: paths.lib },
+          { find: '@src', replacement: paths.src },
+          { find: '@theme', replacement: paths.theme }
+        ]
+      }),
     svelte({
       dev: DEVELOPMENT,
       css: (css) => {
