@@ -567,6 +567,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rollup/plugin-typescript@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "@rollup/plugin-typescript@npm:6.1.0"
+  dependencies:
+    "@rollup/pluginutils": ^3.1.0
+    resolve: ^1.17.0
+  peerDependencies:
+    rollup: ^2.14.0
+    tslib: "*"
+    typescript: ">=3.4.0"
+  checksum: a90e81b60f3364e1d6e139357020d6c759df1ca1745edb756430ae79cb66ed1d4d1325a64ad7dd3bcc7f2dc8907f70bd27f2e7c360b7b3d95b87cb7cb5ec75b9
+  languageName: node
+  linkType: hard
+
 "@rollup/pluginutils@npm:^3.0.8, @rollup/pluginutils@npm:^3.1.0":
   version: 3.1.0
   resolution: "@rollup/pluginutils@npm:3.1.0"
@@ -629,6 +643,13 @@ __metadata:
   dependencies:
     defer-to-connect: ^2.0.0
   checksum: 13d8f71dbd792b620b2cd13d72d086ef031ebefd5263a9db2f34693a32e4d90920fa1d7075cd59bf0c9810b2b1b93ad36d89fc88aba4cd3b8022df7ecc5ffdec
+  languageName: node
+  linkType: hard
+
+"@tsconfig/svelte@npm:^1.0.10":
+  version: 1.0.10
+  resolution: "@tsconfig/svelte@npm:1.0.10"
+  checksum: d38480e0ac7482b488083cbb8aad041862d4a178b879aac86c54ca8ce27b736d6432c79c48a25df9f4f2c03fcbbeb79c81b5e120c199a4b8b9ce38b22961d861
   languageName: node
   linkType: hard
 
@@ -730,6 +751,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/pug@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@types/pug@npm:2.0.4"
+  checksum: f4470eb1884afd1c4659ee1dcc6d838a06ecd959e33a4d911488b4e0edebea6bf97b0964a93383df50a381f85c36e5e737891db5757defdfd2e1c4a279e7dc2b
+  languageName: node
+  linkType: hard
+
 "@types/q@npm:^1.5.1":
   version: 1.5.4
   resolution: "@types/q@npm:1.5.4"
@@ -752,6 +780,15 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: e6e6613c800aeda63e2331e753e8d21df1a2c9aa7a4bc71ed792a848e4811fc96e609759089355314a2318c76eff1f161499cd242044838ab1e6f56e463ebb9c
+  languageName: node
+  linkType: hard
+
+"@types/sass@npm:^1.16.0":
+  version: 1.16.0
+  resolution: "@types/sass@npm:1.16.0"
+  dependencies:
+    "@types/node": "*"
+  checksum: e95d14da2d05dea49e913db55922857234b01f2b1b513dd8cc556b64ffa6d89fb81ce4c1f21a6b4cd20f39d61455975e623ed681502b3d06b2d24a2ddd03a21e
   languageName: node
   linkType: hard
 
@@ -1743,6 +1780,25 @@ __metadata:
     fsevents:
       optional: true
   checksum: a394c13d28f3a7df6c3d8ca80791599523c654a9e08bec2bb6d0f44a6d74c61f9b46cd871401b8694e57e909055280adad898b93f4269d53b8b0e0c02f02dc12
+  languageName: node
+  linkType: hard
+
+"chokidar@npm:^3.4.1":
+  version: 3.4.3
+  resolution: "chokidar@npm:3.4.3"
+  dependencies:
+    anymatch: ~3.1.1
+    braces: ~3.0.2
+    fsevents: ~2.1.2
+    glob-parent: ~5.1.0
+    is-binary-path: ~2.1.0
+    is-glob: ~4.0.1
+    normalize-path: ~3.0.0
+    readdirp: ~3.5.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  checksum: b5a566b31267b1a71c2e7544fbf8c21f597883515d9bfc0356719be6c3b34ee51b0329f3ee5f5d98060ce2930be68f8c33b53f8b3659dc101fd51be265831deb
   languageName: node
   linkType: hard
 
@@ -2891,7 +2947,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-indent@npm:6.0.0":
+"detect-indent@npm:6.0.0, detect-indent@npm:^6.0.0":
   version: 6.0.0
   resolution: "detect-indent@npm:6.0.0"
   checksum: ad0619414151942d278c06cd4b6b79feb96c16eebf4979ef1d03433941f1a85c9bba7daba73a73814d629923716169da5416bbc4290c232d53a2dc06f462da5f
@@ -7058,6 +7114,16 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"postcss-load-config@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "postcss-load-config@npm:3.0.0"
+  dependencies:
+    cosmiconfig: ^7.0.0
+    import-cwd: ^3.0.0
+  checksum: ef27416240c50cb6886e7cc117083add419b41b0bb1f61b432d00a682fe73c4e1c8350e4dde76e9c50ec3982623ba52c974328c28c1b3f351ddd1f6e57ab0cc2
+  languageName: node
+  linkType: hard
+
 "postcss-load-options@npm:^1.2.0":
   version: 1.2.0
   resolution: "postcss-load-options@npm:1.2.0"
@@ -7782,6 +7848,15 @@ fsevents@~2.1.2:
   dependencies:
     picomatch: ^2.2.1
   checksum: 0159f43eb0a90cf4fde5989b607e0a6bef4e6332dc8648f1b50fbc013f1158e1d021bcfd6dad1dc2895da2bb14cdac408239d047e3d61a01dd3a44376e6ec1f1
+  languageName: node
+  linkType: hard
+
+"readdirp@npm:~3.5.0":
+  version: 3.5.0
+  resolution: "readdirp@npm:3.5.0"
+  dependencies:
+    picomatch: ^2.2.1
+  checksum: a64fe5606937d9655252230003362d95da05dbfd3baecedb4bb8c1bc0df497d051a192f9b75345c944e58a0b362c68349be602d6dbf05d03770e510b35a9f80f
   languageName: node
   linkType: hard
 
@@ -8635,6 +8710,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"source-map@npm:^0.7.3":
+  version: 0.7.3
+  resolution: "source-map@npm:0.7.3"
+  checksum: 351ce26ffa1ebf203660c0d70d7566c81e65d2d994d1c2d94da140808e02da34961673ce12ecea9b40797b96fbeb8c70bf71a4ad9f779f1a4fdbba75530bb386
+  languageName: node
+  linkType: hard
+
 "sourcemap-codec@npm:^1.4.4, sourcemap-codec@npm:^1.4.8":
   version: 1.4.8
   resolution: "sourcemap-codec@npm:1.4.8"
@@ -9217,6 +9299,26 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"svelte-check@npm:^1.1.7":
+  version: 1.1.7
+  resolution: "svelte-check@npm:1.1.7"
+  dependencies:
+    chalk: ^4.0.0
+    chokidar: ^3.4.1
+    glob: ^7.1.6
+    import-fresh: ^3.2.1
+    minimist: ^1.2.5
+    source-map: ^0.7.3
+    svelte-preprocess: ^4.0.0
+    typescript: "*"
+  peerDependencies:
+    svelte: ^3.24.0
+  bin:
+    svelte-check: bin/svelte-check
+  checksum: 827b04c485fe9cad11db691c6fd13cc60ee9b9bb1f5bc2b4378c5d132e7181f3ba07649bbb892eb78a9f7acdd365d79ee1feff0efc28fa2ee207ff632ab215b3
+  languageName: node
+  linkType: hard
+
 "svelte-icons@npm:^2.1.0":
   version: 2.1.0
   resolution: "svelte-icons@npm:2.1.0"
@@ -9232,6 +9334,55 @@ fsevents@~2.1.2:
   peerDependencies:
     postcss: 7.x || 6.x
   checksum: 84ebed897c9bc5a6b712e9b0debe6178e589f9eb377d0b8d7d629c8b128eeff1bfd3b31d327128b6bcc56d9d913cd2b31241b4c1aabd1054337a2f4f5e3b10f1
+  languageName: node
+  linkType: hard
+
+"svelte-preprocess@npm:^4.0.0, svelte-preprocess@npm:^4.5.2":
+  version: 4.5.2
+  resolution: "svelte-preprocess@npm:4.5.2"
+  dependencies:
+    "@types/pug": ^2.0.4
+    "@types/sass": ^1.16.0
+    detect-indent: ^6.0.0
+    strip-indent: ^3.0.0
+  peerDependencies:
+    "@babel/core": ^7.10.2
+    coffeescript: ^2.5.1
+    less: ^3.11.3
+    postcss: ^7 || ^8
+    postcss-load-config: ^2.1.0
+    pug: ^3.0.0
+    sass: ^1.26.8
+    stylus: ^0.54.7
+    sugarss: ^2.0.0
+    svelte: ^3.23.0
+    typescript: ^3.9.5 || ^4.0.0
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    coffeescript:
+      optional: true
+    less:
+      optional: true
+    node-sass:
+      optional: true
+    postcss:
+      optional: true
+    postcss-load-config:
+      optional: true
+    pug:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    svelte:
+      optional: true
+    typescript:
+      optional: true
+  checksum: d57f7107e6fbb4a1739474b7cd7b285b0d91bd87e5f1eb218b8dc09896aa7d563cfb5111e062b3ed2821f64640a8de4a5bec7a12f32fe949a126fcadc14b77b3
   languageName: node
   linkType: hard
 
@@ -9518,6 +9669,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"tslib@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "tslib@npm:2.0.3"
+  checksum: 447bfca5deaa157806c3f77eaba74d05dd0b38b014e47ce79d98b5c77ce7d91b00a687ba13ca1b5a74d35ca1098ac7a072c0a97fad06f0266612f2a03a6c8e8f
+  languageName: node
+  linkType: hard
+
 "tunnel-agent@npm:^0.6.0":
   version: 0.6.0
   resolution: "tunnel-agent@npm:0.6.0"
@@ -9591,6 +9749,26 @@ fsevents@~2.1.2:
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
   checksum: c9ef0176aaf32593514c31e5c6edc1db970847aff6e1f0a0570a6ac0cc996335792f394c2fcec59cc76691d22a01888ea073a2f3c6930cfcf7c519addf4e2ad7
+  languageName: node
+  linkType: hard
+
+"typescript@*, typescript@^4.0.5":
+  version: 4.0.5
+  resolution: "typescript@npm:4.0.5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: ce94d4bbb914cc9d6fbd42e1476ab18c3292b262b8ba7ba76cd167a858545207a604e75bf1efbb75b8654c8f85deaa19795c3ef00098d7612855139b4ecc0240
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@*#builtin<compat/typescript>, typescript@patch:typescript@^4.0.5#builtin<compat/typescript>":
+  version: 4.0.5
+  resolution: "typescript@patch:typescript@npm%3A4.0.5#builtin<compat/typescript>::version=4.0.5&hash=5b02a2"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: d4be0bd2a2050b2d7b132cb2a40329178f181543e9d2ac6d1f06babd9f047208558a736a7effdeb28759ae2e815f070b61d10ee2f02cc93a6221a1490f21ffce
   languageName: node
   linkType: hard
 
@@ -9877,7 +10055,9 @@ fsevents@~2.1.2:
     "@rollup/plugin-html": ^0.2.0
     "@rollup/plugin-node-resolve": ^9.0.0
     "@rollup/plugin-replace": ^2.3.3
+    "@rollup/plugin-typescript": ^6.1.0
     "@size-limit/file": ^4.5.7
+    "@tsconfig/svelte": ^1.0.10
     "@yarnpkg/pnpify": ^2.2.1
     autoprefixer: 9.8.6
     babel-eslint: ^10.1.0
@@ -9900,6 +10080,7 @@ fsevents@~2.1.2:
     md5: ^2.3.0
     postcss: 8.1.4
     postcss-100vh-fix: ^0.1.1
+    postcss-load-config: ^3.0.0
     postcss-nested: 4.2.3
     postcss-normalize: ^9.0.0
     prettier: ^2.0.4
@@ -9919,8 +10100,12 @@ fsevents@~2.1.2:
     stylelint-config-recommended: ^3.0.0
     stylelint-order: ^4.1.0
     svelte: ^3.24.1
+    svelte-check: ^1.1.7
     svelte-icons: ^2.1.0
+    svelte-preprocess: ^4.5.2
     svelte-preprocess-postcss: latest
+    tslib: ^2.0.3
+    typescript: ^4.0.5
   languageName: unknown
   linkType: soft
 

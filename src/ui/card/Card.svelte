@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import {getStyleString} from '@lib/get-style-string';
     
     export let cardBg = 'var(--accent_white)';
@@ -9,7 +9,7 @@
     $: style = getStyleString({cardBg, cardContentColor}) || ''
 </script>
 
-<style lang="less">
+<style>
     .card {
         display: flex;
         flex-flow: column nowrap;

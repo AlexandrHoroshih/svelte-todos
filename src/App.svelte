@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
   import {createBrowserHistory} from 'history';
+  
   import Header from '@src/features/header/Header.svelte';
   import ContentWrapper from '@src/features/content/Content.svelte';
   import Footer from '@src/features/footer/Footer.svelte';

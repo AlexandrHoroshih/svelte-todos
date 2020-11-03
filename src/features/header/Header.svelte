@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import IoMdJournal from 'svelte-icons/io/IoMdJournal.svelte';
 </script>
 
-<style lang="less">
+<style>
   .header {
     grid-area: header;
     width: 100%;

@@ -1,4 +1,4 @@
-<style lang="less">
+<style lang="postcss">
   .footer {
     grid-area: footer;
     height: 100%;

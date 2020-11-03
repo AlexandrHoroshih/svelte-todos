@@ -12,8 +12,9 @@ import postcss from 'rollup-plugin-postcss';
 import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import progress from 'rollup-plugin-progress';
-import sveltePreprocessPostcss from 'svelte-preprocess-postcss';
 import md5 from 'md5';
+import autoPreprocess from 'svelte-preprocess';
+import typescript from '@rollup/plugin-typescript';
 
 const paths = {
     theme: path.resolve(__dirname, 'theme'),
@@ -27,7 +28,7 @@ const DEVELOPMENT = !PRODUCTION;
 const DIST = 'public';
 
 export default {
-  input: 'src/index.js',
+  input: 'src/index.ts',
   output: {
     sourcemap: DEVELOPMENT,
     dir: DIST,
@@ -47,10 +48,9 @@ export default {
         const hash = md5(css.code).slice(0, 8);
         css.write(`styles.${hash}.css`, DEVELOPMENT);
       },
-      preprocess: {
-        style: sveltePreprocessPostcss(),
-      },
+      preprocess: autoPreprocess({ postcss: true }),
     }),
+    typescript({ sourceMap: DEVELOPMENT }),
     postcss({ extract: true }),
     babel({ babelHelpers: 'bundled' }),
     html({

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let text = false;
 
   let clicked = false;
@@ -9,7 +9,7 @@
   };
 </script>
 
-<style lang="less">
+<style lang="postcss">
   button {
     --button-main-color: var(--light-green);
     --button-main-hover-color: var(--deep-green);

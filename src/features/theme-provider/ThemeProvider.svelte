@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import 'focus-visible';
 </script>
 
-<style lang="less">
+<style lang="postcss">
   @import-normalize;
 
   :global(*),

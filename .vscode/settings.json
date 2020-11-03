@@ -5,5 +5,7 @@
   },
   "eslint.nodePath": ".yarn/sdks",
   "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
-  "stylelint.stylelintPath": ".yarn/sdks/stylelint/lib/index.js"
+  "stylelint.stylelintPath": ".yarn/sdks/stylelint/lib/index.js",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
