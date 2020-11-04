@@ -693,6 +693,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/history@npm:^4.7.8":
+  version: 4.7.8
+  resolution: "@types/history@npm:4.7.8"
+  checksum: 54020371a412e949d0a329cc325253f16daf5b33e2e485135d39d3b30d3f9a8e323b00ce1162da82387c8ecf0397a8da49ad36ab309f06284326c064092879c7
+  languageName: node
+  linkType: hard
+
 "@types/http-cache-semantics@npm:*":
   version: 4.0.0
   resolution: "@types/http-cache-semantics@npm:4.0.0"
@@ -10058,6 +10065,7 @@ fsevents@~2.1.2:
     "@rollup/plugin-typescript": ^6.1.0
     "@size-limit/file": ^4.5.7
     "@tsconfig/svelte": ^1.0.10
+    "@types/history": ^4.7.8
     "@yarnpkg/pnpify": ^2.2.1
     autoprefixer: 9.8.6
     babel-eslint: ^10.1.0
