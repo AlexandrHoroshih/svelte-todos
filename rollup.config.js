@@ -17,7 +17,6 @@ import autoPreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 
 const paths = {
-    theme: path.resolve(__dirname, 'theme'),
     lib: path.resolve(__dirname, 'lib'),
     src: path.resolve(__dirname, 'src')
 };
@@ -39,7 +38,6 @@ export default {
         entries: [
           { find: '@lib', replacement: paths.lib },
           { find: '@src', replacement: paths.src },
-          { find: '@theme', replacement: paths.theme }
         ]
       }),
     svelte({
