@@ -12,7 +12,7 @@
 
   const router = createRouter({history: createBrowserHistory()});
 
-  router.state.watch(console.log);
+  router.historyStore.watch(console.log);
 
   const testClick = (e) => {
     router.pushFx('page')
