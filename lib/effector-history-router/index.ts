@@ -1,30 +1,49 @@
-import {createDomain} from 'effector';
+import { createDomain } from 'effector';
+import type { Domain } from 'effector';
+import type { History, Action, Location } from 'history';
 
-export const createRouter = ({rootDomain, history}) => {
-    const routerRoot = (rootDomain && rootDomain.createDomain()) || createDomain();
+interface RouterFactoryProps {
+  rootDomain?: Domain;
+  history: History;
+}
 
-    const historyState = routerRoot.createStore({});
-    const historyUpdated = routerRoot.createEvent();
-    const pushFx = routerRoot.createEffect({
-        async handler({url}) {
-            await history.push(url);
-        }
-    });
-    const goBackFx = routerRoot.createEffect({
-        async hander() {
-            await history.goBack();
-        }
-    })
+interface HistoryStore {
+  action: Action;
+  location: Location;
+}
 
-    history.listen(historyUpdated);
+export const createRouter = ({ rootDomain, history }: RouterFactoryProps) => {
+  const routerRoot =
+    (rootDomain && rootDomain.createDomain()) || createDomain();
 
-    historyState.on(historyUpdated, (_, data) => data);
+  const historyStore = routerRoot.createStore<
+    HistoryStore | Partial<HistoryStore>
+  >({});
+  const historyUpdated = routerRoot.createEvent();
+  const pushFx = routerRoot.createEffect({
+    async handler({ url }) {
+      await history.push(url);
+    },
+  });
+  const goBackFx = routerRoot.createEffect<any>({
+    async hander() {
+      await history.back();
+    },
+  });
 
+  history.listen(historyUpdated);
 
-    return {
-        state: historyState,
-        historyUpdated,
-        pushFx,
-        goBackFx
-    }
+  historyStore.on(historyUpdated, (_, data) => data);
+
+  const lastAction = historyStore.map((s) => s?.action);
+  const locationStore = historyStore.map((s) => s?.location);
+
+  return {
+    historyStore,
+    locationStore,
+    lastAction,
+    historyUpdated,
+    pushFx,
+    goBackFx,
+  };
 };
