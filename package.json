@@ -16,7 +16,8 @@
     "focus-visible": "^5.2.0",
     "history": "^5.0.0",
     "svelte": "^3.24.1",
-    "svelte-icons": "^2.1.0"
+    "svelte-icons": "^2.1.0",
+    "trace-router": "^0.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.5",

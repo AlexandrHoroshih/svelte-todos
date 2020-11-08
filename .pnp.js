@@ -96,6 +96,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["svelte-icons", "npm:2.1.0"],
             ["svelte-preprocess", "virtual:f4a9adb1d434f03f9ba640c70c26e11d3a0522328909874e293c9c2496cc9d9251d0ca2c733a3a51302ecd8ede7b5cc6a94f26ee7e25b44eba3282be5822bc61#npm:4.5.2"],
             ["svelte-preprocess-postcss", "virtual:f4a9adb1d434f03f9ba640c70c26e11d3a0522328909874e293c9c2496cc9d9251d0ca2c733a3a51302ecd8ede7b5cc6a94f26ee7e25b44eba3282be5822bc61#npm:1.1.1"],
+            ["trace-router", "virtual:f4a9adb1d434f03f9ba640c70c26e11d3a0522328909874e293c9c2496cc9d9251d0ca2c733a3a51302ecd8ede7b5cc6a94f26ee7e25b44eba3282be5822bc61#npm:0.10.0"],
             ["tslib", "npm:2.0.3"],
             ["typescript", "patch:typescript@npm%3A4.0.5#builtin<compat/typescript>::version=4.0.5&hash=5b02a2"]
           ],
@@ -7776,6 +7777,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["path-to-regexp", [
+        ["npm:6.2.0", {
+          "packageLocation": "./.yarn/cache/path-to-regexp-npm-6.2.0-efbac3c1ff-4116de71f5.zip/node_modules/path-to-regexp/",
+          "packageDependencies": [
+            ["path-to-regexp", "npm:6.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["path-type", [
         ["npm:1.1.0", {
           "packageLocation": "./.yarn/cache/path-type-npm-1.1.0-3949afd6c1-c6ac7d4c7d.zip/node_modules/path-type/",
@@ -10701,6 +10711,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["svelte-icons", "npm:2.1.0"],
             ["svelte-preprocess", "virtual:f4a9adb1d434f03f9ba640c70c26e11d3a0522328909874e293c9c2496cc9d9251d0ca2c733a3a51302ecd8ede7b5cc6a94f26ee7e25b44eba3282be5822bc61#npm:4.5.2"],
             ["svelte-preprocess-postcss", "virtual:f4a9adb1d434f03f9ba640c70c26e11d3a0522328909874e293c9c2496cc9d9251d0ca2c733a3a51302ecd8ede7b5cc6a94f26ee7e25b44eba3282be5822bc61#npm:1.1.1"],
+            ["trace-router", "virtual:f4a9adb1d434f03f9ba640c70c26e11d3a0522328909874e293c9c2496cc9d9251d0ca2c733a3a51302ecd8ede7b5cc6a94f26ee7e25b44eba3282be5822bc61#npm:0.10.0"],
             ["tslib", "npm:2.0.3"],
             ["typescript", "patch:typescript@npm%3A4.0.5#builtin<compat/typescript>::version=4.0.5&hash=5b02a2"]
           ],
@@ -10927,6 +10938,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tough-cookie", "npm:2.5.0"],
             ["psl", "npm:1.8.0"],
             ["punycode", "npm:2.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["trace-router", [
+        ["virtual:f4a9adb1d434f03f9ba640c70c26e11d3a0522328909874e293c9c2496cc9d9251d0ca2c733a3a51302ecd8ede7b5cc6a94f26ee7e25b44eba3282be5822bc61#npm:0.10.0", {
+          "packageLocation": "./.yarn/$$virtual/trace-router-virtual-1c13e6bed3/0/cache/trace-router-npm-0.10.0-22049ebf08-69e83d928b.zip/node_modules/trace-router/",
+          "packageDependencies": [
+            ["trace-router", "virtual:f4a9adb1d434f03f9ba640c70c26e11d3a0522328909874e293c9c2496cc9d9251d0ca2c733a3a51302ecd8ede7b5cc6a94f26ee7e25b44eba3282be5822bc61#npm:0.10.0"],
+            ["@types/effector", null],
+            ["effector", "npm:21.6.0"],
+            ["history", "npm:5.0.0"],
+            ["path-to-regexp", "npm:6.2.0"]
+          ],
+          "packagePeers": [
+            "@types/effector",
+            "effector"
           ],
           "linkType": "HARD",
         }]

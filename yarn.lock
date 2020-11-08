@@ -6860,6 +6860,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"path-to-regexp@npm:^6.1.0":
+  version: 6.2.0
+  resolution: "path-to-regexp@npm:6.2.0"
+  checksum: 4116de71f5453163910347f199ab28fdd07f4053ed88093acb42dc044a2e5e7d9e18379e81e8d5d982d1b88291be3666e56be34a0741298673248fd21e3c1c16
+  languageName: node
+  linkType: hard
+
 "path-type@npm:^1.0.0":
   version: 1.1.0
   resolution: "path-type@npm:1.1.0"
@@ -9456,6 +9463,7 @@ fsevents@~2.1.2:
     svelte-icons: ^2.1.0
     svelte-preprocess: ^4.5.2
     svelte-preprocess-postcss: latest
+    trace-router: ^0.10.0
     tslib: ^2.0.3
     typescript: ^4.0.5
   languageName: unknown
@@ -9673,6 +9681,18 @@ fsevents@~2.1.2:
     psl: ^1.1.28
     punycode: ^2.1.1
   checksum: bf5d6fac5ce0bebc5876cb9b9a79d3d9ea21c9e4099f3d3e64701d6ba170a052cb88cece6737ec2473bac4f0a4f6c75d46ec17985be8587c6bbdd38d91625cb4
+  languageName: node
+  linkType: hard
+
+"trace-router@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "trace-router@npm:0.10.0"
+  dependencies:
+    history: ^5.0.0
+    path-to-regexp: ^6.1.0
+  peerDependencies:
+    effector: ">=21"
+  checksum: 69e83d928b6747f2be35a33aeaf63267471c640ddae03c9d0fd57dfb9d2dcd276a54818ea31cf0846c1c280172cfff372c578f72324aa254f4aed08c0da24575
   languageName: node
   linkType: hard
 
