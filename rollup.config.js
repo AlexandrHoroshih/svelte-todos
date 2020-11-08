@@ -17,8 +17,8 @@ import autoPreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 
 const paths = {
-    lib: path.resolve(__dirname, 'lib'),
-    src: path.resolve(__dirname, 'src')
+  lib: path.resolve(__dirname, 'lib'),
+  src: path.resolve(__dirname, 'src'),
 };
 
 const PRODUCTION = !process.env.ROLLUP_WATCH;
@@ -35,11 +35,11 @@ export default {
   },
   plugins: [
     alias({
-        entries: [
-          { find: '@lib', replacement: paths.lib },
-          { find: '@src', replacement: paths.src },
-        ]
-      }),
+      entries: [
+        { find: '@lib', replacement: paths.lib },
+        { find: '@src', replacement: paths.src },
+      ],
+    }),
     svelte({
       dev: DEVELOPMENT,
       css: (css) => {
@@ -47,6 +47,10 @@ export default {
         css.write(`styles.${hash}.css`, DEVELOPMENT);
       },
       preprocess: autoPreprocess({ postcss: true }),
+    }),
+    resolve({
+      browser: true,
+      dedupe: ['svelte'],
     }),
     typescript({ sourceMap: DEVELOPMENT }),
     postcss({ extract: true }),
@@ -66,10 +70,6 @@ export default {
       ),
     }),
     progress(),
-    resolve({
-      browser: true,
-      dedupe: ['svelte'],
-    }),
     DEVELOPMENT && serve(DIST),
     DEVELOPMENT && livereload(DIST),
     commonjs(),
